@@ -3,11 +3,11 @@ import styled from "@emotion/styled";
 import deepEarthMob from "../../assets/images/mobile/image-deep-earth.jpg";
 import nigthArcadeMob from "../../assets/images/mobile/image-night-arcade.jpg";
 import soccerTeamMob from "../../assets/images/mobile/image-soccer-team.jpg";
-import gridMob from "../../assets/images/mobile/image-grid.jpg"
-import aboveMob from "../../assets/images/mobile/image-from-above.jpg"
-import pocketMob from "../../assets/images/mobile/image-pocket-borealis.jpg"
-import curiosityMob from "../../assets/images/mobile/image-curiosity.jpg"
-import fishEye from "../../assets/images/mobile/image-fisheye.jpg"
+import gridMob from "../../assets/images/mobile/image-grid.jpg";
+import aboveMob from "../../assets/images/mobile/image-from-above.jpg";
+import pocketMob from "../../assets/images/mobile/image-pocket-borealis.jpg";
+import curiosityMob from "../../assets/images/mobile/image-curiosity.jpg";
+import fishEye from "../../assets/images/mobile/image-fisheye.jpg";
 
 export const AboutCon = styled.div`
   margin-bottom: 96px;
@@ -15,7 +15,7 @@ export const AboutCon = styled.div`
   padding-left: 24px;
   padding-right: 24px;
 
-text-align: center;
+  text-align: center;
 
   & > h3 {
     margin-bottom: 48px;
@@ -30,8 +30,8 @@ text-align: center;
 `;
 
 export const AboutList = styled.ul`
-margin-bottom: 34px;
-`
+  margin-bottom: 34px;
+`;
 
 export const AboutItem = styled.li`
   height: 120px;
@@ -59,33 +59,30 @@ export const AboutItem = styled.li`
     background-size: contain;
   }
 
-
-  &:nth-of-type(4){
+  &:nth-of-type(4) {
     background-image: url(${gridMob});
     background-size: contain;
   }
 
-&:nth-of-type(5){
+  &:nth-of-type(5) {
     background-image: url(${aboveMob});
     background-size: contain;
-}
+  }
 
-&:nth-of-type(6){
+  &:nth-of-type(6) {
     background-image: url(${pocketMob});
     background-size: contain;
-}
+  }
 
-&:nth-of-type(7){
+  &:nth-of-type(7) {
     background-image: url(${curiosityMob});
     background-size: contain;
-}
+  }
 
-&:nth-of-type(8){
+  &:nth-of-type(8) {
     background-image: url(${fishEye});
     background-size: contain;
-}
-
-
+  }
 
   & > h4 {
     width: 130px;
@@ -101,23 +98,23 @@ export const AboutItem = styled.li`
 `;
 
 export const AboutBtn = styled.button`
-width: 158px;
+  width: 158px;
 
-margin-left: auto;
-margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 
-text-transform: uppercase;
+  text-transform: uppercase;
 
-padding-top: 12px;
-padding-bottom: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
-font-family: "Alata";
-font-size: 14px;
-letter-spacing: 5px;
-font-weight: 400;
+  font-family: "Alata";
+  font-size: 14px;
+  letter-spacing: 5px;
+  font-weight: 400;
 
-background-color: transparent;
-color: #000;
+  background-color: transparent;
+  color: #000;
 
-border: 1px solid #000;
-`
+  border: 1px solid #000;
+`;
