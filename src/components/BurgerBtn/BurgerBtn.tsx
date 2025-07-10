@@ -1,8 +1,14 @@
 import  * as SC from "./BurgerBtnStyled"
 
-const BurgerBtn:React.FC = () => {
+type Props = {
+    openShare: ()=> void;
+}
+
+const BurgerBtn:React.FC<Props> = ({openShare}) => {
+
+
     return ( 
-        <SC.BurgerBtnStyled></SC.BurgerBtnStyled>
+        <SC.BurgerBtnStyled onClick={openShare}></SC.BurgerBtnStyled>
      );
 }
  

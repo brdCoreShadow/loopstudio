@@ -6,29 +6,32 @@ import Intro from "./components/Intro/Intro";
 import Logo from "./components/Logo/Logo";
 import NavList from "./components/NavList/NavList";
 import SocNet from "./components/SocNet/SocNet";
+import { useToggle } from "./hooks/useToggle";
 import Footer from "./layouts/Footer/Footer";
 import Header from "./layouts/Header/Header";
 import SharedLayout from "./layouts/SharedLayout/SharedLayout";
 
 function App() {
+  const { isShare, openShare, closeShare } = useToggle();
+
   return (
     <div>
-      <BurgerMenu/>
+      {isShare && <BurgerMenu closeShare={closeShare} isShare={isShare}/>}
       <Header>
         <div>
           <Logo />
-          <BurgerBtn />
+          <BurgerBtn openShare={openShare}/>
         </div>
         <Hero />
       </Header>
       <SharedLayout>
-        <Intro/>
-        <About/>
+        <Intro />
+        <About />
       </SharedLayout>
       <Footer>
-        <Logo/>
-        <NavList/>
-        <SocNet/>
+        <Logo />
+        <NavList />
+        <SocNet />
       </Footer>
     </div>
   );
