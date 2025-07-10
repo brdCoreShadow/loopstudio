@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import Intro from "./components/Intro/Intro";
 import Logo from "./components/Logo/Logo";
 import NavList from "./components/NavList/NavList";
+import SocNet from "./components/SocNet/SocNet";
 import Footer from "./layouts/Footer/Footer";
 import Header from "./layouts/Header/Header";
 import SharedLayout from "./layouts/SharedLayout/SharedLayout";
@@ -25,6 +26,7 @@ function App() {
       <Footer>
         <Logo/>
         <NavList/>
+        <SocNet/>
       </Footer>
     </div>
   );
