@@ -1,5 +1,6 @@
 import About from "./components/About/About";
 import BurgerBtn from "./components/BurgerBtn/BurgerBtn";
+import BurgerMenu from "./components/BurgerMenu/BurgerMenu";
 import Hero from "./components/Hero/Hero";
 import Intro from "./components/Intro/Intro";
 import Logo from "./components/Logo/Logo";
@@ -12,6 +13,7 @@ import SharedLayout from "./layouts/SharedLayout/SharedLayout";
 function App() {
   return (
     <div>
+      <BurgerMenu/>
       <Header>
         <div>
           <Logo />
