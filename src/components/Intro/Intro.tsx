@@ -1,12 +1,17 @@
 import * as SC from "./IntroStyled"
 
 import interactivePic from "../../assets/images/mobile/image-interactive.jpg";
+import interactivePicDesk from "../../assets/images/desktop/image-interactive.jpg"
+import { useScreenSize } from "@/hooks/useScreenSize";
 
 const Intro:React.FC = () => {
+
+    const {isDesktop} = useScreenSize()
+
   return (
     <SC.IntroCon>
       <SC.IntroPicThumb>
-        <img src={interactivePic} alt="interactivePic" />
+        <img src={isDesktop ? interactivePicDesk : interactivePic} alt="interactivePic" />
       </SC.IntroPicThumb>
       <SC.IntroContentCon>
         <h3>The leader in interactive VR</h3>
