@@ -8,15 +8,20 @@ export const NavListStyled = styled.ul`
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
     margin: 0;
+
   }
 `;
 
 export const NavItem = styled.li`
   padding-bottom: 8px;
-
+ &:hover,
+      &:focus,
+      &:active {
+        border-bottom: 1px solid #fff;
+      }
   &:not(:last-of-type) {
     margin-bottom: 16px;
 
@@ -24,11 +29,7 @@ export const NavItem = styled.li`
       margin-bottom: 0;
       margin-right: 32px;
 
-      &:hover,
-      &:focus,
-      &:active {
-        border-bottom: 1px solid #fff;
-      }
+     
     }
   }
 

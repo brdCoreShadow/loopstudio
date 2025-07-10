@@ -7,7 +7,7 @@ import isntagramIcon from "../../assets/images/icon-instagram.svg"
 
 const SocNet:React.FC = () => {
     return ( 
-        <div>
+        <SC.SocNetCon>
             <SC.SocNetList>
                 <li>
                     <img src={fbIcon} alt="fbIcon" />
@@ -23,7 +23,7 @@ const SocNet:React.FC = () => {
                 </li>
             </SC.SocNetList>
             <SC.IPNote>© 2021 Loopstudios. All rights reserved.</SC.IPNote>
-        </div>
+        </SC.SocNetCon>
      );
 }
  

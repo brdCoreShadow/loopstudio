@@ -1,3 +1,5 @@
+import * as SC from "./layouts/Footer/FooterStyled";
+
 import About from "./components/About/About";
 import BurgerBtn from "./components/BurgerBtn/BurgerBtn";
 import BurgerMenu from "./components/BurgerMenu/BurgerMenu";
@@ -31,9 +33,16 @@ function App() {
         <About />
       </SharedLayout>
       <Footer>
-        <Logo />
-        <NavList />
-        <SocNet />
+        {isDesktop ? (
+          <SC.FooterDeskFlexCon>
+  <div><Logo />  <NavList /></div>
+            
+            <SocNet />{" "}
+          </SC.FooterDeskFlexCon>
+        ) : (
+          <Logo />
+        )}
+        {!isDesktop &&<><NavList /><SocNet /></> }
       </Footer>
     </div>
   );
