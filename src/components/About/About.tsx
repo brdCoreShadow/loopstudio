@@ -1,9 +1,16 @@
+import { useScreenSize } from "@/hooks/useScreenSize";
 import * as SC from "./AboutStyled"
 
 const About:React.FC = () => {
+
+    const {isDesktop} = useScreenSize()
+
     return ( 
         <SC.AboutCon>
+            <SC.AboutDeskFleskCon>
             <h3>our creations</h3>
+            {isDesktop && <SC.AboutBtn>see all</SC.AboutBtn>}
+            </SC.AboutDeskFleskCon>
             <SC.AboutList>
                 <SC.AboutItem>
                     <h4>deep earth</h4>
@@ -30,7 +37,8 @@ const About:React.FC = () => {
                     <h4>make it fisheye</h4>
                 </SC.AboutItem>
             </SC.AboutList>
-            <SC.AboutBtn>see all</SC.AboutBtn>
+            {!isDesktop && <SC.AboutBtn>see all</SC.AboutBtn>}
+            
         </SC.AboutCon>
      );
 }
